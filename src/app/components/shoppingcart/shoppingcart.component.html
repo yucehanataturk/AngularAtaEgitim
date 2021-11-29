@@ -1,0 +1,38 @@
+<div class="container mt-1">
+  <div class="row mt-2">
+    <div class="col col-md-12 mt-5 mb-1">
+      <h3 class="mt-5">Sepetim</h3>
+      <button class="btn btn-outline-success btn mb-2 float-right">
+        Siparişi Tamamla
+      </button>
+      <table class="table">
+        <thead>
+          <td><b>Eğitim Görseli</b></td>
+          <td><b>Eğitim Kategorisi</b></td>
+          <td><b>Eğitim Adı</b></td>
+          <td><b>Eğitim Bilgisi</b></td>
+          <td><b>Eğitim Fiyatı</b></td>
+          <td><b>Sil</b></td>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <img
+                src="assets/javascript-programming-language.jpg"
+                [routerLink]="['/urun-detay']"
+                style="width: 100px; height: 100px; cursor: pointer"
+              />
+            </td>
+            <td>Yazılım Geliştirme</td>
+            <td>Javascript</td>
+            <td>Eğitim Bilgisi</td>
+            <td>650 <span>TL</span></td>
+            <td>
+              <button class="btn btn-outline-danger btn-sm mt-2">Sil</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

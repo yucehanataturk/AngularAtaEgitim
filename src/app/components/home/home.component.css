@@ -1,0 +1,9 @@
+.card:hover > img {
+  transition: all 0.8s;
+  padding: 15px;
+}
+
+.home-cards {
+  display: flex;
+  align-items: center;
+}

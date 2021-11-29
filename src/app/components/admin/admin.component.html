@@ -1,0 +1,112 @@
+<div class="container-fluid mt-4">
+  <div class="row mb-5">
+    <div class="col col-md-9 mt-5">
+      <h5>Eğitimler</h5>
+      <hr />
+      <div class="table-responsive-lg">
+        <table class="table table-sm table-bordered table-hover">
+          <thead>
+            <td><b>Eğitim Görseli</b></td>
+            <td><b>Eğitim Kategorisi</b></td>
+            <td><b>Eğitim Adı</b></td>
+            <td><b>Eğitim Bilgisi</b></td>
+            <td><b>Eğitim Fiyatı</b></td>
+            <td><b>Kayıt Tarihi</b></td>
+            <td><b>Düzenlenme Tarihi</b></td>
+            <td><b>Düzenle</b></td>
+            <td><b>Sil</b></td>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <img
+                  src="assets/javascript-programming-language.jpg"
+                  alt=""
+                  style="height: 110px; width: 110px"
+                />
+              </td>
+              <td>Yazılım Geliştirme</td>
+              <td>Javascript</td>
+              <td>Eğitim Bilgisi</td>
+              <td>650 TL</td>
+              <td>Eğitim Kayıt Tarihi</td>
+              <td>Eğitim Düzenlenme Tarihi</td>
+              <td>
+                <button class="btn btn-outline-warning btn-sm mt-2">
+                  Düzenle
+                </button>
+              </td>
+              <td>
+                <button class="btn btn-outline-danger btn-sm mt-2">Sil</button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img
+                  src="assets/photoshop.jpg"
+                  alt=""
+                  style="height: 110px; width: 110px"
+                />
+              </td>
+              <td>Tasarım</td>
+              <td>Photoshop</td>
+              <td>Eğitim Bilgisi</td>
+              <td>400 TL</td>
+              <td>Eğitim Kayıt Tarihi</td>
+              <td>Eğitim Düzenlenme Tarihi</td>
+              <td>
+                <button class="btn btn-outline-warning btn-sm mt-2">
+                  Düzenle
+                </button>
+              </td>
+              <td>
+                <button class="btn btn-outline-danger btn-sm mt-2">Sil</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="col-md-3 float-right mt-5 mb-2">
+      <h5>Eğitim Kaydı Ekle</h5>
+      <hr />
+      <form ngForm="ngForm">
+        <div class="form-group input-group-sm">
+          <label>Eğitim Görseli</label>
+          <input type="file" name="urunFotoUrl" class="form-control" />
+        </div>
+        <input type="hidden" name="key" class="form-control" />
+        <div class="form-group input-group-sm">
+          <label for="">Eğitim Adı</label>
+          <input type="text" name="urunAd" class="form-control" />
+        </div>
+        <div class="form-group">
+          <label for="">Eğitim Bilgi</label>
+          <textarea
+            type="text"
+            name="urunBilgi"
+            class="form-control"
+          ></textarea>
+        </div>
+        <div class="form-group">
+          <label for="">Eğitim Kategorisi</label>
+          <select name="urunKategori" class="form-control">
+            <option value="Yazilim">Yazılım Geliştirme</option>
+            <option value="Tasarim">Tasarım</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <button routerLink="/" class="btn btn-primary float-left mb-5">
+            Eğitimleri Gör
+          </button>
+          <input
+            type="submit"
+            value="Kaydet"
+            class="btn btn-outline-success float-right"
+          />
+        </div>
+        <div class="mt-5"></div>
+      </form>
+    </div>
+  </div>
+</div>
